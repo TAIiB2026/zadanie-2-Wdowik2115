@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CarsComponent } from './cars/cars.component'; 
+import { MoviesComponent } from './movies/movies.component';
+import { DataListModule } from './modules/data-list/data-list.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarsComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
